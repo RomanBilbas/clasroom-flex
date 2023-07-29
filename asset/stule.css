@@ -2,47 +2,61 @@
   box-sizing: border-box;
 }
 
-html {
-  --user-photo-siza: 75px;
-}
-
-.usersList {
-  padding: 15px;
-}
-
-.userListItem {
-    box-shadow:  0 0 5px grey;
-    padding: 10px;
-  display: flex;
-  align-items: center;
-  gap: 15px;
+body {
+    padding: 15px;
+    background-color: bisque;
+    display: flex;
+    flex-wrap: wrap;
 
 }
 
-.userImageWrapper {
-  width: var(--user-photo-siza);
-  height: var(--user-photo-siza);
-  border-radius: 50%;
-  overflow: hidden;
-  border: 2px dotted purple;
-}
-.userImageWrapper img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+.userCard {
+    margin: 10px;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-.userName {
-}
+    flex-basis: 300px;
+    min-width: 260px;
+    flex-grow: 1;
+    min-width: 260px;
+    max-width: 400px;
 
+}
+.editBtn {
+    align-self: flex-end;
+}
 .userDescription {
+    text-align: center;
+}
+.userImg {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: -20px;
+
+}
+.memberSection {
+   
+    align-self: stretch;
+
+    display: flex;
+    justify-content: space-between;
+
+}
+.cardFooter {
+
+}
+.socialLinks {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
 }
 
-.trashBtn {
-  margin-left: auto;
-  border: none;
-  background-color: transparent;
-  color: grey;
+.sicialLinkItem {
+
 }
-
-
